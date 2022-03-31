@@ -6,6 +6,7 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    'plugin:react/jsx-runtime',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -20,5 +21,9 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    'react/jsx-filename-extension': 'off',
+    'react/jsx-one-expression-per-line': 'off',
+    'import/extensions': 'off',
+    'import/no-unresolved': 'off',
   },
 };
